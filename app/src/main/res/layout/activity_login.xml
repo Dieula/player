@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="dieula.player.LoginActivity">
+
+    <LinearLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitCenter"
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="17dp">
+
+        <ImageView
+            android:id="@+id/ivSignIn"
+            android:layout_width="108dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/player"
+            tools:ignore="ContentDescription"
+       />
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etPass"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="29dp"
+        android:background="@color/colorPrimary"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:onClick="onLogButton"
+        android:text="LOG IN"
+        android:textColor="@android:color/background_light"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/tvRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/btnSignUp"
+        android:layout_marginTop="47dp"
+        android:gravity="center"
+        android:text="Register"
+        android:textColor="@android:color/black"
+        android:textColorHighlight="@android:color/darker_gray"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/etPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/etIdentif"
+        android:layout_alignTop="@+id/etIdentif"
+        android:layout_marginTop="54dp"
+        android:drawableLeft="@mipmap/ic_lock"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/darker_gray"
+        android:textSize="18sp"
+        app:passwordToggleEnabled="true"
+        android:layout_alignEnd="@+id/btnSignUp" />
+
+    <EditText
+        android:id="@+id/etIdentif"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@mipmap/ic_user"
+        android:ems="10"
+        android:gravity="left"
+        android:hint="E-mail"
+        android:inputType="textPersonName"
+        android:paddingBottom="5dp"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textColorHint="@android:color/darker_gray"
+        android:textSize="18sp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/LinearLayout1"
+        android:layout_alignStart="@+id/btnSignUp"
+        android:layout_alignEnd="@+id/btnSignUp" />
+
+
+</RelativeLayout>
